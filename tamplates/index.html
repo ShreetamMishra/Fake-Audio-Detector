@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Voice Detector</title>
+</head>
+<body>
+    <h1>Fake Voice Detector</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="audio">Upload an audio file:</label><br><br>
+        <input type="file" id="audio" name="audio" accept="audio/*" required><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if prediction %}
+    <h2>Result: {{ prediction }}</h2>
+    <p>Prediction score: {{ score }}</p>
+    {% endif %}
+</body>
+</html>
