@@ -42,7 +42,7 @@ def detect_fake_voice(audio_file, model):
     return prediction
 
 # Example of making a prediction on a new audio file
-new_audio_file = "audio_dataset/WhatsApp Audio 2024-09-04 at 11.16.30 PM.mp3" #enter the path of the audio file here
+new_audio_file = "./rea.mp3" #enter the path of the audio file here
 prediction = detect_fake_voice(new_audio_file, model)
 
 # print(prediction)
